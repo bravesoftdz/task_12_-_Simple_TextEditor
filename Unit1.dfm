@@ -579,7 +579,7 @@ object Form1: TForm1
       693D2801BC52778F0D27A5044DDE97BC78693D2801BB52F78F0D27A50736ED4B
       ED0FC46BFDB49E941A6B535CCB65231E0873626820FE470083FFD9}
     Proportional = True
-    OnMouseDown = ImageOpenMouseDown
+    OnMouseDown = ImageNewMouseDown
     OnMouseMove = ImageNewMouseMove
   end
   object MemoText: TMemo

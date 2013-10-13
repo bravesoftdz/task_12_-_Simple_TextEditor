@@ -36,6 +36,8 @@ type
       Y: Integer);
     procedure FormMouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
+    procedure ImageNewMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
   private
     { Private declarations }
   public
@@ -138,6 +140,12 @@ begin
   ImageNew.Picture.LoadFromFile('ico_new.jpg');
   ImageOpen.Picture.LoadFromFile('ico_open.jpg');
   ImageSave.Picture.LoadFromFile('ico_save.jpg');
+end;
+
+procedure TForm1.ImageNewMouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+  MemoText.Lines.Text := '';
 end;
 
 end.
